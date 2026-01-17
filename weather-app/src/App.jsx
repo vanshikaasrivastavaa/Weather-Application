@@ -49,7 +49,7 @@ function App() {
     setLoading(true);
     setError(null);
 
-    // Using the direct Lat/Lon endpoint you found
+    // Using the direct Lat/Lon endpoint
     const url = `https://open-weather13.p.rapidapi.com/latlon?latitude=${lat}&longitude=${lon}&lang=EN`;
     const options = {
       method: 'GET',
@@ -87,7 +87,8 @@ function App() {
     }
   };
 
-  // --- Optimized Location Handler ---
+  // ---
+  // Location Handler ---
   const handleLocation = () => {
     if (navigator.geolocation) {
       setLoading(true);
@@ -139,7 +140,7 @@ function App() {
             <div className={`card shadow-lg border-0 rounded-4 mb-4 ${darkMode ? 'glass-dark' : 'glass-light'}`}>
               <div className="card-body p-4">
                 <h3 className={`text-center fw-bold mb-4 ${darkMode ? 'text-white' : 'text-primary'}`}>
-                  Weather Forecast
+                  My Weather Application
                 </h3>
                 <form onSubmit={handleSearch} className="d-flex gap-2">
                   <input
