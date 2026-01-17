@@ -1,0 +1,20 @@
+/* src/index.css */
+
+/* Reset standard margins */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Ensure the React Root element takes full space */
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none; /* This overrides the default Vite restriction */
+  text-align: left; /* Reset default center alignment */
+}
